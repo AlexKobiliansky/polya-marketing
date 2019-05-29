@@ -97,3 +97,49 @@
   &:hover
     .svg
       fill: $accent
+
+
+//mmenu customization start
+.mm-menu_theme-dark
+  background-color: #d5d9e2
+  text-transform: uppercase
+
+.mm-logo
+  display: block
+  margin: 0 auto
+  transform: scaleY(.71)
+
+.mm-navbars_top
+  border-color: transparent
+
+.mm-listitem, .mm-listitem .mm-btn_next, .mm-listitem .mm-btn_next:before, .mm-listitem:after, .mm-listview
+  border-color: rgba(255,255,255,.7)
+
+.mm-listitem
+  a
+    padding-top: 14px
+    padding-bottom: 12px
+
+.mm-navbar
+  border: none
+
+
+.mm-menu_theme-dark .mm-navbar a, .mm-menu_theme-dark .mm-navbar>*
+  font-size: 20px
+  color: $accent
+  letter-spacing: 2px
+
+.mm-menu_theme-dark .mm-listview .mm-btn_next:after
+  border-color: rgba(255,255,255,.7)
+
+.mm-menu_theme-dark .mm-btn:after, .mm-menu_theme-dark .mm-btn:before
+  border-color: rgba(255,255,255,.7)
+
+ul
+  li.mm-listitem
+    &:before
+      display: none
+
+.mm-menu a, .mm-menu a:active, .mm-menu a:hover, .mm-menu a:link, .mm-menu a:visited
+  color: $text
+//mmenu customization end

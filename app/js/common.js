@@ -1,9 +1,6 @@
 $(document).ready(function(){
 
-    $(".toggle-mnu").click(function() {
-        $(this).toggleClass("on");
-        return false;
-    });
+
 
 
     //E-mail Ajax Send
@@ -51,4 +48,49 @@ $(document).ready(function(){
             $img.replaceWith($svg);
         }, 'xml');
     });
+
+    /**
+     * mobile-mnu customization
+     */
+    var mmenu = $('#mobile-mnu');
+    var menuLogo = mmenu.data("logo");
+    var $mmenu = mmenu.mmenu({
+        navbars: [{
+            content: [ "<img src=" + menuLogo + " class=\"img-responsive mm-logo\" alt=\"alt\"/>" ],
+            height: 3
+        }],
+        "pageScroll": true,
+
+        "navbar": {
+            "title" : "",
+        },
+        "extensions": [
+            "theme-dark",
+            "pagedim-black",
+            "position-front",
+            "fx-listitems-slide",
+        ],
+    }, {
+        offCanvas: {
+            pageSelector: "#page-container"
+        },
+    });
+
+    var mmenuBtn = $("#mmenu-btn");
+    var API = $mmenu.data("mmenu");
+
+    mmenuBtn.click(function() {
+        API.open();
+        $(this).addClass('on')
+    });
+
+
+    API.bind( "close:start", function() {
+        setTimeout(function() {
+            mmenuBtn.removeClass( "on" );
+        }, 300);
+    });
+    /**
+     * end mobile-mnu customization
+     */
 });
