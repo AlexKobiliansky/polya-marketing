@@ -1,0 +1,99 @@
+.toggle-mnu
+  display: inline-block
+  width: 56px
+  height: 22px
+  padding-top: 12px
+  position: relative
+  top: 7px
+  cursor: pointer
+
+  span:after, span:before
+    content: ""
+    position: absolute
+    left: 0
+
+  span:after
+    top: 9px
+
+  span:before
+    top: -9px
+
+
+  span
+    position: relative
+    display: block
+
+  span, span:after, span:before
+    width: 100%
+    height: 2px
+    background-color: $text
+    transition: all .4s
+    backface-visibility: hidden
+    border-radius: 2px
+  span:before
+    width: 33px
+
+  &.on span
+    background-color: transparent
+
+  &.on span:before
+    transform: rotate(45deg) translate(7px, 1px)
+    width: 80%
+
+
+  &.on span:after
+    transform: rotate(-45deg) translate(11px, -6px)
+    width: 80%
+  &:hover
+    span:before
+      width: 100%
+  &.on:hover
+    span:before
+      width: 80%
+
+
+
+.top-line
+  padding: 20px 0 10px
+
+.top-info
+  padding-left: 75px
+
+.top-tel
+  font-size: 20px
+  font-weight: 700
+  position: relative
+  top: 4px
+  .svg
+    width: 26px
+    height: 26px
+    position: relative
+    top: 5px
+    margin-right: 15px
+    fill: $text
+    +mt(.2s)
+  a
+    +mt(.2s)
+    color: $text
+    &:hover
+      color: $accent
+      .svg
+        fill: $accent
+
+.socials
+  float: right
+  position: relative
+  top: -4px
+  z-index: 3
+
+.soc-item
+  display: inline-block
+  margin: 0 6px
+  .svg
+    width: 48px
+    height: auto
+    fill: $text
+    +mt(.3s)
+  &:hover
+    .svg
+      fill: $accent
