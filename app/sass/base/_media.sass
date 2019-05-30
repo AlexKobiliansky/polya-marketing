@@ -9,6 +9,20 @@
       text-align: left
 
 @media only screen and (max-width: 1400px)
+  .online-item
+    width: calc(25% - 20px)
+    &-content
+      padding: 115px 30px 50px
+    &-desc
+      font-size: 20px
+    &-icon
+      width: 160px
+      height: 160px
+      top: -80px
+      left: calc(50% - 80px)
+      .svg
+        width: 70px
+
   .start-item-title
     font-size: 20px
 
@@ -56,6 +70,14 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
+
+  .online-items-wrap
+    flex-wrap: wrap
+
+  .online-item
+    width: calc(50% - 20px)
+    margin-bottom: 110px
+
   .start-container
     .section-title
       padding: 0 10%
@@ -103,6 +125,20 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .s-online
+    .container
+      padding-bottom: 0
+
+  .online-items-wrap
+    padding: 0
+    &:after
+      display: none
+    &:before
+      left: 40px
+      height: 130px
+      bottom: 65px
+
   .section-title
     font-size: 28px
     padding: 0 5%
@@ -113,6 +149,18 @@
 
 // ≥768px
 +media-breakpoint-down(sm)
+
+  .s-online
+    .container
+      padding-top: 80px
+
+  .online-item
+    width: calc(50% - 10px)
+
+  .online-items-wrap
+    &:before
+      left: 20px
+      display: none
 
   .start-item
     margin-bottom: 30px
@@ -156,6 +204,25 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .online-item
+    width: 100%
+    z-index: 2
+    position: relative
+    &-content
+      position: relative
+      z-index: 2
+    &:before
+      height: 120px
+      content: ''
+      position: absolute
+      background-color: $accent 
+      width: 100%
+      left: 20px
+      bottom: -20px
+      z-index: -1
+    &:last-child
+      margin-bottom: 60px
 
   .start-container
     padding-bottom: 65px
