@@ -1,0 +1,83 @@
+.s-program
+  .container
+    padding-top: 80px
+    padding-bottom: 80px
+  &-wrap
+    padding: 0 150px
+  .section-title
+    margin-bottom: 30px
+
+.program-desc
+  font-size: 25px
+  text-align: center
+  line-height: 1.4
+  margin-bottom: 60px
+
+.sprint
+  margin-bottom: 50px
+  &:last-child
+    margin-bottom: 0
+
+.sprint-head
+  background-color: $accent
+  color: #fff
+  padding: 22px 40px 30px
+  &-title
+    font-size: 35px
+    font-weight: 800
+  &-desc
+    font-size: 25px
+    .svg
+      width: 33px
+      height: auto
+      margin-right: 10px
+      fill: #fff
+      position: relative
+      top: 7px
+
+.sprint-item
+  background-color: #fff
+  padding: 25px 40px
+  box-shadow: 0 10px 30px 5px #f7f7f8
+  margin-bottom: 10px
+  &-head
+    font-size: 25px
+    font-weight: 800
+    color: #000000
+    position: relative
+    +mt(.3s)
+    padding-right: 35px
+    &:after
+      position: absolute
+      content: ''
+      width: 18px
+      height: 11px
+      +bg-cover
+      background-image: url('../img/icons/sprint-arrow.png')
+      right: 0
+      top: 10px
+    &:hover
+      color: $accent
+      cursor: pointer
+  li
+    padding-left: 22px
+    position: relative
+    margin-bottom: 10px
+    &:before
+      position: absolute
+      content: ''
+      width: 6px
+      height: 6px
+      background-color: $accent
+      border-radius: 50%
+      left: 0
+      top: 7px
+  &-desc
+    display: none
+    margin-top: 10px
+
+  &.active
+    .sprint-item-head
+      &:after
+        transform: rotate(180deg)
+

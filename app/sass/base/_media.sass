@@ -79,6 +79,9 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .s-program-wrap
+    padding: 0 60px
+
   .why-first
     padding-bottom: 40px
 
@@ -137,6 +140,15 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .s-program-wrap
+    padding: 0
+
+  .program-desc
+    font-size: 20px
+
+  .sprint-head-desc
+    font-size: 20px
+
   .why-title
     font-size: 55px
 
@@ -166,6 +178,23 @@
 
 // ≥768px
 +media-breakpoint-down(sm)
+
+  .s-program
+    .container
+      padding-top: 50px
+      padding-bottom: 50px
+
+  .sprint-head
+    &-title
+      font-size: 24px
+    &-desc
+      font-size: 18px
+
+  .sprint-item-desc
+    font-size: 16px
+
+  .program-desc
+    font-size: 18px
 
   .s-why
     .container
@@ -257,6 +286,18 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .sprint-head
+    padding-left: 20px
+    padding-right: 20px
+
+  .sprint-item
+    padding-left: 20px
+    padding-right: 20px
+    &-head
+      font-size: 20px
+    &-desc
+      font-size: 14px
 
   .why-title
     font-size: 30px

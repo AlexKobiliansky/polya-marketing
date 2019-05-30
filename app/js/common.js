@@ -101,4 +101,14 @@ $(document).ready(function(){
     }
 
     heightses();
+
+
+    $('.sprint-item-head').on('click', function(){
+        var th = $(this),
+            sprintItem = th.parents('.sprint-item'),
+            desc = sprintItem.find('.sprint-item-desc');
+
+        sprintItem.toggleClass('active');
+        desc.slideToggle();
+    });
 });
