@@ -93,4 +93,12 @@ $(document).ready(function(){
     /**
      * end mobile-mnu customization
      */
+
+    function heightses() {
+        if ($(window).width()>=1200) {
+            $('.start-item-head').height('auto').equalHeights();
+        }
+    }
+
+    heightses();
 });

@@ -1,0 +1,54 @@
+.s-start
+  .btn-wrap
+    text-align: center
+  .container
+    z-index: 0
+    position: relative
+
+.start-container
+  padding: 85px 0 100px
+  position: relative
+  .section-title
+    padding: 0 20%
+    position: relative
+  &:before
+    content: ''
+    position: absolute
+    width: 100%
+    height: 100%
+    background-color: #d5d9e2
+    left: -40px
+    bottom: -40px
+    z-index: -1
+
+.start-items-wrap
+  display: flex
+  justify-content: space-between
+  margin-left: -40px
+  margin-right: -40px
+  margin-top: 70px
+  margin-bottom: 30px
+
+.start-item
+  width: calc(33% - 27px)
+  background-color: #fff
+  padding: 45px 40px 40px
+  margin-bottom: 40px
+  &-head
+    display: table
+    margin-bottom: 25px
+  &-icon
+    display: table-cell
+    width: 80px
+    text-align: center
+    img
+      display: inline-block
+  &-title
+    display: table-cell
+    vertical-align: top
+    padding-left: 25px
+    font-size: 23px
+    font-weight: 700
+  &-list
+    padding-left: 50px
+

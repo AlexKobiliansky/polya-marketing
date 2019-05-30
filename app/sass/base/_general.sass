@@ -79,6 +79,9 @@ body
 .s-white
   background-color: #fff
 
+.s-creamy
+  background-color: $accent-creamy
+
 .btn
   display: inline-block
   line-height: 1
@@ -106,6 +109,38 @@ body
     color: #fff
     .svg
       fill: #fff
+
+.btn-red
+  padding: 30px 70px
+  border: 3px solid $accent
+  color: #fff
+  background-color: $accent
+  &:hover, &:active, &:focus
+    background-color: transparent
+    color: $text
+
+
+.section-title
+  font-weight: 800
+  font-size: 40px
+  text-align: center
+  margin-bottom: 0
+
+.list-check
+  li
+    position: relative
+    padding-left: 57px
+    line-height: 1.1
+    margin-bottom: 15px
+    &:before
+      position: absolute
+      content: ''
+      width: 28px
+      height: 22px
+      background-image: url('../img/icons/check-icon.png')
+      +bg-cover
+      left: 0
+      top: 0
 
 
 
