@@ -4,11 +4,19 @@
 /*==========  Desktop First  ==========*/
 
 @media only screen and (max-width: 1600px)
+
+  .why-title
+    font-size: 70px
+
   .intro-text
     .btn-wrap
       text-align: left
 
 @media only screen and (max-width: 1400px)
+
+  .why-title
+    font-size: 65px
+
   .online-item
     width: calc(25% - 20px)
     &-content
@@ -71,6 +79,9 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .why-first
+    padding-bottom: 40px
+
   .online-items-wrap
     flex-wrap: wrap
 
@@ -126,6 +137,12 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .why-title
+    font-size: 55px
+
+  .why-content
+    padding: 0 90px 0 50px
+
   .s-online
     .container
       padding-bottom: 0
@@ -149,6 +166,42 @@
 
 // ≥768px
 +media-breakpoint-down(sm)
+
+  .s-why
+    .container
+      &:before
+        width: calc(100% - 20px)
+
+  .why-title
+    font-size: 42px
+    span
+      font-size: 45px
+  .why-content
+    padding: 0
+
+  .why-list
+    padding-left: 20px
+    padding-right: 20px
+    font-size: 16px
+    li
+      padding-left: 45px
+    &-title
+      font-size: 30px
+
+  .why-first-img
+    height: 400px
+
+  .why-first
+    padding: 20px 0
+    &:before, &:after
+      display: none
+
+  .why-first-desc
+    font-size: 15px
+    &:first-letter
+      font-size: 60px
+      margin-left: 10px
+
 
   .s-online
     .container
@@ -205,6 +258,40 @@
 // ≥480px
 +media-breakpoint-down(xs)
 
+  .why-title
+    font-size: 30px
+    margin-top: 0
+    span
+      font-size: 35px
+
+  .why-content
+    font-size: 16px
+
+  .why-list
+    border-left-width: 4px
+    padding: 20px 15px
+    .list-check
+      li
+        font-size: 14px
+        padding-left: 30px
+        &:before
+          width: 21px
+          height: 16.5px
+
+  .why-first
+    &-img
+      height: 250px
+      margin-bottom: 15px
+    &-desc
+      padding: 0 5px
+      &:first-letter
+        margin-bottom: 0
+        line-height: 1
+        padding-left: 0
+
+    &-title
+      font-size: 24px
+
   .online-item
     width: 100%
     z-index: 2
@@ -216,7 +303,7 @@
       height: 120px
       content: ''
       position: absolute
-      background-color: $accent 
+      background-color: $accent
       width: 100%
       left: 20px
       bottom: -20px
