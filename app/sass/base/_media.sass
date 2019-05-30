@@ -14,6 +14,9 @@
 
 @media only screen and (max-width: 1400px)
 
+  .results-wrap
+    padding: 0 130px
+
   .bonus-item
     padding-left: 70px
     padding-right: 70px
@@ -83,6 +86,17 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .results-wrap
+    padding: 0 40px
+
+  .result-item
+    margin-bottom: 45px
+    width: calc(50% - 20px)
+    &-icon
+      width: 60px
+    &-desc
+      font-size: 20px
+
   .bonuses-wrap
     padding-left: 0
     padding-right: 0
@@ -151,6 +165,9 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .result-item
+    width: 100%
 
   .bonus-item
     width: 100%
@@ -301,6 +318,23 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .result-item
+    &-icon
+      display: block
+      text-align: center
+      width: 100%
+      margin-bottom: 15px
+    &-desc
+      padding-left: 0
+      font-size: 16px
+
+  .s-result-wrap
+    top: 40px
+    padding-top: 40px
+
+  .s-result .container:before
+    top: 20px
 
   .s-bonuses
     .container
