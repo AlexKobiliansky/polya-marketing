@@ -121,7 +121,7 @@
 								<h1>Система развития<br>онлайн школ</h1>
 								<p>Ежедневная поддержка, продажи, выстраивание системного маркетинга и команды, скрипты.</p>
 								<div class="btn-wrap">
-									<a href="#0" class="btn btn-transparent">
+									<a href="#popup-form" class="btn btn-transparent">
 										Иду в полугодовой коучинг <img src="img/icons/btn-arrow.svg" alt="alt" class="svg">
 									</a>
 								</div>
@@ -207,7 +207,7 @@
 						<!-- start-item end -->
 					</div>
 					<div class="btn-wrap">
-						<a href="#0" class="btn btn-red">Хочу стартовать с вами</a>
+						<a href="#popup-form" class="btn btn-red">Хочу стартовать с вами</a>
 					</div>
 				</div>
 			</div>
@@ -1406,9 +1406,40 @@
 	</div> <!-- /big-container -->
 </div> <!-- page-container -->
 
+<div class="hidden">
+	<form class="contact-form popup-form" id="popup-form">
 
+		<!-- Hidden Required Fields -->
+		<input type="hidden" name="project_name" value="polya-marketing">
+		<input type="hidden" name="admin_email" value="alexey.kobilianskiy@gmail.com">
+		<input type="hidden" name="form_subject" value="Заявка с сайта polya-marketing">
+		<!-- END Hidden Required Fields -->
 
+		<div class="form-content">
+			<h3>Оставьте заявку</h3>
+			<p>И мы свяжемся с Вами в ближайшее время</p>
+		</div>
 
+		<div class="form-labels-wrap">
+
+			<label>
+				<input type="text" placeholder="ВАШЕ ИМЯ" name="Имя" autocomplete="off"
+					   data-validation="custom"
+					   data-validation-regexp="^[a-zA-Zа-яА-Я ]{1,20}$"
+					   data-validation-error-msg="* Укажите ваше имя">
+			</label>
+
+			<label>
+				<input type="text" data-validation-error-msg="* Укажите корректный email" data-validation="email" name="email" placeholder="ВАШ E-MAIL" autocomplete="off">
+			</label>
+
+			<button type="submit" class="btn btn-red">Оставить заявку</button>
+		</div>
+
+	</form>
+</div>
+
+<div id="toTop"><img src="img/icons/totop.svg" alt="to top" class="svg"></div>
 
 
 <script src="js/scripts.min.js"></script>

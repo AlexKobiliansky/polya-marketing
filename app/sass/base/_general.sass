@@ -148,6 +148,53 @@ body
       top: 0
 
 
+#toTop
+  width: 40px
+  height: 40px
+  background-color: $accent
+  color: #eee
+  text-align: center
+  font-size: 28px
+  line-height: 40px
+  position: fixed
+  right: 20px
+  bottom: 40px
+  cursor: pointer
+  +mt(.3s)
+  border-radius: 3px
+  opacity: 0
+  z-index: 100
+  .svg
+    width: 16px
+    height: auto
+    fill: #fff
+  &:hover
+    opacity: 1!important
+
+//MY_MFP_ZOOM_IN
+.my-mfp-zoom-in
+  .zoom-anim-dialog, .popup-form
+    opacity: 0
+    transition: all 0.5s ease-in-out
+    transform: scale(0.7)
+  &.mfp-ready .zoom-anim-dialog, &.mfp-ready .popup-form
+    opacity: 1
+    transform: scale(1)
+  &.mfp-removing .zoom-anim-dialog, &.mfp-removing .popup-form
+    transform: scale(0.7)
+    opacity: 0
+  &.mfp-bg
+    opacity: 0
+    transition: opacity 0.5s ease-out
+  &.mfp-ready.mfp-bg
+    opacity: .7
+  &.mfp-removing.mfp-bg
+    opacity: 0
+
+.mfp-close
+//end MY-MFP-ZOOM-IN
+
+
 
 
 

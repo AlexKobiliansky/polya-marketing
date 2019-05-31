@@ -101,7 +101,7 @@ $(document).ready(function(){
             desc = sprintItem.find('.sprint-item-desc');
 
         sprintItem.toggleClass('active');
-        desc.slideToggle();
+        desc.slideToggle(300);
     });
 
     $('.faq-item-quest').on('click', function(){
@@ -120,7 +120,47 @@ $(document).ready(function(){
         scrollToTopOnError: false
     });
 
+    $(function() {
+        $("a[href='#popup-form']").magnificPopup({
+            type: "inline",
+            fixedContentPos: !1,
+            fixedBgPos: !0,
+            overflowY: "auto",
+            closeBtnInside: !0,
+            preloader: !1,
+            midClick: !0,
+            removalDelay: 300,
+            mainClass: "my-mfp-zoom-in"
+        })
+    });
 
+
+    /**
+     * toTop functionality start
+     */
+    $(window).scroll(function() {
+        if($(this).scrollTop() > 1000) {
+            $('#toTop').css('opacity', '.6');
+        } else {
+            $('#toTop').css('opacity', '0');
+        }
+    });
+
+    $('body').bind('touchmove', function (e)
+    {
+        if($(this).scrollTop() > 1000) {
+            $('#toTop').css('opacity', '.6');
+        } else {
+            $('#toTop').css('opacity', '0');
+        }
+    });
+
+    $('#toTop').click(function() {
+        $('body,html').animate({scrollTop:0},600);
+    });
+    /**
+     * toTop functionality end
+     */
 
 
     //E-mail Ajax Send
