@@ -1,0 +1,52 @@
+.s-faq
+  .container
+    padding-top: 80px
+    padding-bottom: 80px
+
+.faq-wrap
+  margin-top: 40px
+  padding: 0 40px
+
+.faq-item
+  margin-bottom: 10px
+  &-quest
+    background-color: #f7f8fb
+    padding: 20px 40px 18px 152px
+    position: relative
+    color: $text
+    font-size: 25px
+    font-family: "GothamPro", sans-serif
+    font-weight: bold
+    cursor: pointer
+    +mt(.4s)
+    &:before
+      content: ''
+      position: absolute
+      +mt(.4s)
+      width: 15px
+      height: 9px
+      background-image: url('../img/icons/faq-arrow.png')
+      +bg-cover
+      left: 115px
+      top: calc(50% - 4.5px)
+      transform: none
+    &:hover
+      color: $accent
+  &-ans
+    padding: 27px 40px 8px 152px
+    display: none
+    font-weight: 300
+    p
+      margin-bottom: 5px
+  &.active
+    .faq-item-quest
+      background-color: $accent
+      color: #fff
+      &:before
+        width: 27px
+        height: 15px
+        background-image: url('../img/icons/faq-arrow-active.png')
+        top: calc(50% - 9.5px)
+        left: 106px
+        transform: rotate(180deg)
+

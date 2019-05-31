@@ -133,6 +133,19 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .faq-item
+    &.active
+      .faq-item-quest:before
+        left: 50px
+
+  .faq-item-quest
+    font-size: 22px
+    padding-left: 100px
+    &:before
+      left: 55px
+  .faq-item-ans
+    padding-left: 100px
+
   .rule-items-wrap
     padding: 0
 
@@ -277,6 +290,14 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .faq-item
+    &-quest
+      font-size: 20px
+    &-ans
+      font-size: 16px
+      p
+        margin-bottom: 10px
+
   .rule-item
     padding: 0 20px
     &-desc
@@ -358,6 +379,9 @@
 
 // ≥768px
 +media-breakpoint-down(sm)
+
+  .faq-wrap
+    padding: 0
 
   .rule-item
     padding: 0
@@ -498,6 +522,24 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .s-faq
+    .container
+      padding-top: 40px
+      padding-bottom: 40px
+
+  .faq-item
+    &-quest
+      font-size: 16px
+      padding-left: 75px
+      &:before
+        left: 32px
+    &-ans
+      padding-left: 30px
+      font-size: 14px
+    &.active
+      .faq-item-quest:before
+        left: 27px
 
   .s-rules
     .container
