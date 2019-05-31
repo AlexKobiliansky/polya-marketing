@@ -1,0 +1,51 @@
+.s-reviews
+  .container
+    padding-top: 80px
+    padding-bottom: 80px
+    background-image: url('../img/bg-reviews.jpg')
+    +bg-cover
+  .btn-wrap
+    text-align: center
+  .btn
+    margin-top: 65px
+
+.reviews-items-wrap
+  padding: 0 200px
+  margin-top: 65px
+
+.review-item
+  display: table
+  box-shadow: 200px 0 150px 0 rgba(#000, .06)
+  background-color: transparent
+  margin-right: 260px
+  &-img
+    display: table-cell
+    width: 160px
+    height: 150px
+    background-color: transparent
+
+  &-photo
+    width: 160px
+    height: 150px
+    border-left: 10px $accent solid
+    +bg-cover
+  &-content
+    vertical-align: top
+    display: table-cell
+    width: calc(100% - 160px)
+    padding: 35px 40px 10px
+    font-weight: 300
+    background-color: #fff
+  &-name
+    font-family: "GothamPro", sans-serif
+    font-weight: 700
+    font-size: 31px
+    line-height: 1
+    margin-bottom: 15px
+  &-notice
+    font-weight: 800
+    color: $accent
+    margin-bottom: 15px
+  &:nth-child(even)
+    margin-left: 260px
+    margin-right: 0

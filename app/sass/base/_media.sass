@@ -27,6 +27,9 @@
 
 @media only screen and (max-width: 1400px)
 
+  .reviews-items-wrap
+    padding: 0 40px
+
   .what-items-wrap
     padding-left: 0
     padding-right: 0
@@ -118,6 +121,14 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
+
+  .reviews-items-wrap
+    padding: 0
+
+  .review-item
+    margin-right: 120px
+    &:nth-child(even)
+      margin-left: 120px
 
   .what-item
     width: 50%
@@ -223,6 +234,19 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .review-item
+    &-img
+      display: block
+      text-align: center
+      width: 100%
+    &-photo
+      margin-left: auto
+      margin-right: auto
+    &-content
+      display: block
+      width: 100%
+      font-size: 16px
+
   .what-item, .what-item:last-child
     width: 100%
     padding: 0
@@ -283,6 +307,9 @@
 
 // ≥768px
 +media-breakpoint-down(sm)
+
+  .review-item
+    margin-right: 110px
 
   .s-what-wrapper
     padding: 50px 20px 20px
@@ -408,6 +435,32 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .s-reviews
+    .container
+      padding-top: 40px
+      padding-bottom: 40px
+    .btn
+      margin-top: 20px
+
+  .reviews-items-wrap
+    margin-top: 30px
+
+  .review-item
+    margin-right: 0
+    box-shadow: 0 0 45px 0 rgba(#000, .1)
+    margin-bottom: 30px
+    padding-top: 20px
+    &:nth-child(even)
+      margin-left: 0
+    &-content
+      padding-left: 10px
+      padding-right: 10px
+    &-name
+      text-align: center
+      font-size: 22px
+    &-notice
+      text-align: center
 
   .s-what-wrapper
     margin: 0
