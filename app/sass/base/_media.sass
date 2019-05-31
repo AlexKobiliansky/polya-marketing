@@ -27,6 +27,10 @@
 
 @media only screen and (max-width: 1400px)
 
+  .what-items-wrap
+    padding-left: 0
+    padding-right: 0
+
   .form-banner
     margin-left: 0
 
@@ -114,6 +118,11 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
+
+  .what-item
+    width: 50%
+    &-desc
+      font-size: 20px
 
   .s-form
     .container
@@ -214,6 +223,10 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .what-item, .what-item:last-child
+    width: 100%
+    padding: 0
+
   .form-banner
     margin-bottom: 40px
     box-shadow: 0 0 25px 5px rgba(#000, .2)
@@ -270,6 +283,9 @@
 
 // ≥768px
 +media-breakpoint-down(sm)
+
+  .s-what-wrapper
+    padding: 50px 20px 20px
 
   .team-item
     &-photo
@@ -392,6 +408,19 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .s-what-wrapper
+    margin: 0
+
+  .what-item
+    margin-bottom: 30px
+    &-icon
+      width: 100px
+      height: 100px
+      .svg
+        height: 45px
+    &-desc
+      font-size: 16px
 
   form
     font-size: 16px

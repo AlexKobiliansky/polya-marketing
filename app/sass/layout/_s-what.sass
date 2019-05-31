@@ -1,0 +1,63 @@
+.s-what
+  .container
+    padding: 40px 0 40px
+    position: relative
+    z-index: 1
+    &:before
+      content: ''
+      position: absolute
+      width: calc(100% - 40px)
+      height: calc(100% - 40px)
+      z-index: -1
+      background-color: #d5d9e2
+      left: 0
+      top: 0
+    &:after
+      content: ''
+      position: absolute
+      width: calc(100% - 40px)
+      height: calc(100% - 40px)
+      z-index: -1
+      background-color: $accent-creamy
+      right: 0
+      bottom: 0
+
+.s-what-wrapper
+  position: relative
+  z-index: 4
+  margin: 0 40px
+  padding: 85px 40px 40px
+
+.what-items-wrap
+  margin-top: 65px
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  padding-left: 90px
+  padding-right: 90px
+
+.what-item
+  text-align: center
+  padding: 0 40px
+  width: 33%
+  margin-bottom: 45px
+  &:last-child
+    width: 50%
+  &-icon
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 140px
+    height: 140px
+    background-color: #ffdfdf
+    border-radius: 50%
+    margin-left: auto
+    margin-right: auto
+    margin-bottom: 25px
+    .svg
+      height: 66px
+      width: auto
+  &-desc
+    font-family: "GothamPro", sans-serif
+    font-weight: 700
+    font-size: 23px
