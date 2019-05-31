@@ -1,0 +1,92 @@
+.s-marks
+  counter-reset: mark-item
+  .container
+    position: relative
+    z-index: 2
+    padding-top: 40px
+    padding-bottom: 80px
+    &:after, &:before
+      content: ''
+      position: absolute
+      background-color: $accent
+      z-index: 0
+    &:before
+      width: 540px
+      height: 540px
+      left: 0
+      top: 0
+    &:after
+      width: 240px
+      height: 640px
+      right: 0
+      bottom: 40px
+
+.s-marks-wrapper
+  background-color: #fff
+  position: relative
+  z-index: 3
+  padding: 90px 40px 40px
+  .section-title
+    color: $accent
+
+.mark-items-wrap
+  margin-top: 65px
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  padding-left: 110px
+  padding-right: 110px
+
+.mark-item
+  width: 33%
+  padding: 0 40px
+  text-align: center
+  cursor: pointer
+  margin-bottom: 55px
+  position: relative
+
+
+  &-img
+    position: relative
+    width: 250px
+    height: 250px
+    margin-left: auto
+    margin-right: auto
+    margin-bottom: 25px
+    &:before
+      counter-increment: mark-item
+      content: counter(mark-item)
+      position: absolute
+      background-color: #fff
+      width: 90px
+      height: 90px
+      border-radius: 50%
+      left: 0
+      top: -7px
+      box-shadow: 0 0 30px rgba(#000, .1)
+      z-index: 2
+      font-size: 66px
+      font-weight: 700
+      color: $accent
+      font-family: "GothamPro", sans-serif
+      line-height: 97px
+      vertical-align: middle
+      filter: none!important
+    .img-wrap
+      width: 250px
+      height: 250px
+      +bg-cover
+      border-radius: 50%
+      margin-left: auto
+      margin-right: auto
+      filter: grayscale(1)
+      +mt(.5s)
+      margin-bottom: 20px
+      position: relative
+
+  &-desc
+    font-size: 25px
+  &:hover
+    .mark-item-img
+      .img-wrap
+        filter: none

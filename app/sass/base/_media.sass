@@ -27,6 +27,13 @@
 
 @media only screen and (max-width: 1400px)
 
+  .mark-items-wrap
+    padding-left: 50px
+    padding-right: 50px
+
+  .mark-item-desc
+    font-size: 22px
+
   .reviews-items-wrap
     padding: 0 40px
 
@@ -121,6 +128,25 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
+
+  .mark-items-wrap
+    padding: 0
+
+  .mark-item
+    padding: 0 20px
+    &-img
+      width: 180px
+      height: 180px
+      &:before
+        width: 60px
+        height: 60px
+        font-size: 40px
+        line-height: 65px
+      .img-wrap
+        width: 180px
+        height: 180px
+    &-desc
+      font-size: 18px
 
   .reviews-items-wrap
     padding: 0
@@ -234,6 +260,9 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .mark-item
+    width: 50%
+
   .review-item
     &-img
       display: block
@@ -307,6 +336,14 @@
 
 // ≥768px
 +media-breakpoint-down(sm)
+
+  .s-marks
+    .container
+      &:before, &:after
+        width: 100%
+
+  .mark-item
+    width: 100%
 
   .review-item
     margin-right: 110px
@@ -435,6 +472,17 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .mark-item
+    &-img
+      width: 140px
+      height: 140px
+      .img-wrap
+        width: 140px
+        height: 140px
+
+  .s-marks-wrapper
+    padding: 40px 0 20px
 
   .s-reviews
     .container
