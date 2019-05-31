@@ -3,19 +3,7 @@ $(document).ready(function(){
 
 
 
-    //E-mail Ajax Send
-    $("form").submit(function() { //Change
-        var th = $(this);
 
-        $.ajax({
-            type: "POST",
-            url: "mail.php", //Change
-            data: th.serialize()
-        }).done(function() {
-
-        });
-        return false;
-    });
 
     $('img.svg').each(function(){
         var $img = jQuery(this);
@@ -130,5 +118,22 @@ $(document).ready(function(){
     $.validate({
         form : '.contact-form',
         scrollToTopOnError: false
+    });
+
+
+
+
+    //E-mail Ajax Send
+    $(".contact-form").submit(function() { //Change
+        var th = $(this);
+
+        $.ajax({
+            type: "POST",
+            url: "mail.php", //Change
+            data: th.serialize()
+        }).done(function() {
+
+        });
+        return false;
     });
 });
