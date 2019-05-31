@@ -27,6 +27,10 @@
 
 @media only screen and (max-width: 1400px)
 
+  .rule-items-wrap
+    padding-left: 50px
+    padding-right: 50px
+
   .mark-items-wrap
     padding-left: 50px
     padding-right: 50px
@@ -128,6 +132,19 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
+
+  .rule-items-wrap
+    padding: 0
+
+  .rule-item
+    margin-bottom: 40px
+    &-icon
+      width: 160px
+      height: 160px
+      .svg
+        width: 80px
+    &-desc
+      font-size: 20px
 
   .mark-items-wrap
     padding: 0
@@ -260,6 +277,11 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .rule-item
+    padding: 0 20px
+    &-desc
+      font-size: 18px
+
   .mark-item
     width: 50%
 
@@ -336,6 +358,10 @@
 
 // ≥768px
 +media-breakpoint-down(sm)
+
+  .rule-item
+    padding: 0
+    width: 100%
 
   .s-marks
     .container
@@ -472,6 +498,20 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .s-rules
+    .container
+      padding-top: 40px
+
+  .rule-item
+    &-icon
+      width: 140px
+      height: 140px
+      .svg
+        width: 65px
+
+  .rule-items-wrap
+    margin-top: 40px
 
   .mark-item
     &-img
