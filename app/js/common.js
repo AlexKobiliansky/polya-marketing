@@ -98,6 +98,10 @@ $(document).ready(function(){
         if ($(window).width()>=1200) {
             $('.start-item-head').height('auto').equalHeights();
         }
+
+        if ($(window).width()>=1400) {
+            $('.form-eq-item').height('auto').equalHeights();
+        }
     }
 
     heightses();
@@ -110,5 +114,10 @@ $(document).ready(function(){
 
         sprintItem.toggleClass('active');
         desc.slideToggle();
+    });
+
+    $.validate({
+        form : '.contact-form',
+        scrollToTopOnError: false
     });
 });

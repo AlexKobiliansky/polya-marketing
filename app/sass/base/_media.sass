@@ -5,6 +5,16 @@
 
 @media only screen and (max-width: 1600px)
 
+  .form-banner-cost
+    font-size: 45px
+  .form-banner-title
+    font-size: 30px
+  .form-banner-notice
+    font-size: 12px
+    &:before
+      border-width: 17px
+
+
   .team-item-data
     width: calc(100% - 230px)
 
@@ -16,6 +26,13 @@
       text-align: left
 
 @media only screen and (max-width: 1400px)
+
+  .form-banner
+    margin-left: 0
+
+  .form-img
+    max-width: 500px
+    height: auto
 
   .team-item
     &-name
@@ -97,6 +114,22 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
+
+  .s-form
+    .container
+      padding-bottom: 60px
+
+  form
+    h3
+      font-size: 30px
+
+  .body-form
+    padding-bottom: 60px
+    .form-labels-wrap
+      padding: 0
+
+  .form-img
+    display: none
 
   .team-item-data
     width: calc(100% - 400px)
@@ -180,6 +213,10 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .form-banner
+    margin-bottom: 40px
+    box-shadow: 0 0 25px 5px rgba(#000, .2)
 
   .s-team
     .container
@@ -355,6 +392,26 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  form
+    font-size: 16px
+    h3
+      font-size: 20px
+    input
+      padding: 15px 20px 10px
+      font-size: 14px
+      margin-bottom: 15px
+    .btn
+      margin-top: 0
+      padding: 15px 20px
+      width: 100%
+      font-size: 14px
+
+
+  .body-form
+    padding: 20px 20px 40px
+    .form-labels-wrap
+      margin-top: 30px
 
   .team-items-wrap
     padding-left: 0
