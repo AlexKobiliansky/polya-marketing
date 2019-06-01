@@ -133,6 +133,37 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .videocom-item, .video-item
+    height: 420px
+
+  .video-nav-wrap
+    height: 140px
+    &:after
+      width: 60px
+      height: 60px
+      left: calc(50% - 30px)
+      top: calc(50% - 30px)
+    &:before
+      border: 12px solid transparent
+      border-left: 13px solid #3e3e3e
+      left: calc(50% - 4px)
+      top: calc(50% - 12px)
+
+  .video-notice
+    font-size: 18px
+
+
+  .btn-play
+    width: 100px
+    height: 100px
+    left: calc(50% - 50px)
+    top: calc(50% - 50px)
+    &:after
+      border: 23px solid transparent
+      border-left: 22px solid #3e3e3e
+      left: 46px
+      top: 28px
+
   .faq-item
     &.active
       .faq-item-quest:before
@@ -289,6 +320,23 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .video-nav-slider-wrap
+    margin-right: 0
+    margin-left: 40px
+    &:before
+      right: auto
+      left: -40px
+      width: 100px
+      height: 100px
+      top: 20px
+
+  .video-nav-slider
+    padding-bottom: 0
+    padding-top: 50px
+    .swiper-button-next, .swiper-button-prev
+      bottom: auto
+      top: 20px
 
   .main-foot
     text-align: center
@@ -543,6 +591,39 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .video-content-wrap
+    margin-top: 40px
+    margin-bottom: 40px
+
+  .btn-transparent
+    padding: 15px 15px 12px
+    font-size: 10px
+
+  .video-nav-wrap
+    height: 100px
+
+  .video-notice
+    font-size: 14px
+    padding-left: 10px
+
+  .videocom-item, .video-item
+    height: 250px
+
+  .video-nav-slider-wrap
+    margin-left: 0
+    &:before
+      left: 0
+
+  .video-slider-wrap
+    margin-left: 0
+    &:before
+      left: 0
+
+  .s-video
+    .container
+      padding-top: 40px
+      padding-bottom: 20px
 
   .popup-form
     padding-left: 20px

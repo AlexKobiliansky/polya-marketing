@@ -1,0 +1,138 @@
+.s-video
+  .container
+    padding-top: 80px
+    padding-bottom: 80px
+  .btn-wrap
+    text-align: center
+
+
+
+// youtube video customization
+.videocom-item
+  position: relative
+  height: 610px
+
+.video-item
+  height: 610px
+  width: 100%
+  background-color: #000
+.thumbnail-container
+  +bg-cover
+  position: relative
+  &:after
+    +overlay()
+    +mt(.3s)
+    background-color: rgba(#000, .4)
+    opacity: 1
+    z-index: 1
+
+.btn-play
+  position: absolute
+  width: 150px
+  height: 150px
+  background-color: rgba(#fff, .7)
+  border-radius: 50%
+  left: calc(50% - 75px)
+  top: calc(50% - 75px)
+  z-index: 3
+  cursor: pointer
+  &:after
+    content: ''
+    position: absolute
+    border: 31px solid transparent
+    border-left: 28px solid #3e3e3e
+    left: 68px
+    top: 43px
+  &:hover
+    background-color: rgba(#fff, .5)
+    &:after
+      border-left-color: $accent
+//end youtube video customization
+
+.video-content-wrap
+  margin-top: 65px
+  margin-bottom: 65px
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    width: 100%
+    height: 295px
+    background-color: $accent-creamy
+    position: absolute
+    bottom: 30px
+    left: 0
+
+.video-slider-wrap
+  margin-left: 40px
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    width: 40px
+    height: 70%
+    background-color: $accent
+    left: -40px
+    bottom: 0
+
+.video-notice
+  font-size: 25px
+  font-weight: 700
+  color: #fff
+  background-color: $accent
+  padding: 20px 40px 20px 0
+
+
+.video-nav-wrap
+  height: 240px
+  +bg-cover
+  cursor: pointer
+  position: relative
+  margin-bottom: 15px
+  &:after
+    content: ''
+    position: absolute
+    width: 100px
+    height: 100px
+    background-color: rgba(#fff, .7)
+    border-radius: 50%
+    left: calc(50% - 50px)
+    top: calc(50% - 50px)
+    z-index: 3
+  &:before
+    content: ''
+    position: absolute
+    z-index: 4
+    border: 20px solid transparent
+    border-left: 21px solid #3e3e3e
+    left: calc(50% - 7px)
+    top: calc(50% - 20px)
+
+.video-nav-slider
+  padding-bottom: 70px
+  .swiper-button-next, .swiper-button-prev
+    bottom: 0
+    top: auto
+    width: 40px
+    height: 40px
+    background-color: $accent
+    background-size: 10px
+  .swiper-button-prev
+    background-image: url('../img/swiper-arrow-prev.png')
+    left: auto
+    right: 50px
+  .swiper-button-next
+    background-image: url('../img/swiper-arrow-next.png')
+    right: 0
+
+.video-nav-slider-wrap
+  margin-right: 40px
+  position: relative
+  &:before
+    width: 170px
+    height: 170px
+    content: ''
+    position: absolute
+    background-color: $accent
+    right: -40px
+    top: -40px

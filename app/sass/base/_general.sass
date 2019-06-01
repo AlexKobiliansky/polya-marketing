@@ -124,6 +124,15 @@ body
   &:hover, &:active, &:focus
     background-color: transparent
     color: $text
+  &.disabled
+    background-color: $accent
+    color: #fff
+    filter: grayscale(.5)
+    &:hover, &:active, &:focus
+      background-color: $accent
+      color: #fff
+      filter: grayscale(.5)
+
 
 
 .section-title
@@ -194,6 +203,57 @@ body
 
 .mfp-close
 //end MY-MFP-ZOOM-IN
+
+
+//preloader
+.preloader
+  position: fixed
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  width: 100%
+  height: 100%
+  z-index: 10000
+  display: flex
+  justify-content: center
+  align-items: center
+  background-color: $accent-creamy
+
+.sk-double-bounce
+  width: 6em
+  height: 6em
+  position: relative
+  margin: auto
+
+.sk-double-bounce .sk-child
+  width: 100%
+  height: 100%
+  border-radius: 50%
+  background-color: $accent
+  opacity: 0.6
+  position: absolute
+  top: 0
+  left: 0
+  animation: sk-double-bounce 2.0s infinite ease-in-out
+
+.sk-double-bounce .sk-double-bounce-2
+  animation-delay: -1.0s
+
+@-webkit-keyframes sk-double-bounce
+  0%, 100%
+    transform: scale(0)
+
+  50%
+    transform: scale(1)
+
+@keyframes sk-double-bounce
+  0%, 100%
+    transform: scale(0)
+
+  50%
+    transform: scale(1)
+//end preloader
 
 
 
